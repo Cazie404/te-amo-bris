@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Puedo ser tu Valentín?</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #E0C6F7; /* Color morado pastel */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #3a3a3a;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 50px;
+            color: #9A69E0; /* Color morado pastel */
+            animation: fadeIn 3s ease-out;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 2s ease-out;
+        }
+
+        /* Imagen de tulipanes como fondo */
+        .image-container {
+            width: 100%;
+            height: 300px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9f/Tulips_in_Spring.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            animation: fadeIn 3s ease-out;
+        }
+
+        /* Imagen decorativa de Rapunzel */
+        .rapunzel-image {
+            width: 100%;
+            height: 300px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0e/Rapunzel_in_her_tower.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-top: 30px;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .question {
+            font-size: 2.5rem;
+            color: #9A69E0; /* Color morado pastel */
+            margin-top: 20px;
+        }
+
+        .answers {
+            margin-top: 30px;
+            font-size: 1.5rem;
+        }
+
+        .answer {
+            background-color: #f1e0e6;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #9A69E0;
+            border-radius: 8px;
+            display: inline-block;
+            width: 80%;
+            animation: popIn 1s ease-out;
+        }
+
+        .answer:hover {
+            background-color: #f4c6d7;
+            cursor: pointer;
+        }
+
+        /* Frases lindas */
+        .lovely-phrases {
+            font-size: 1.2rem;
+            color: #9A69E0;
+            margin-top: 40px;
+            font-style: italic;
+            animation: fadeIn 4s ease-out;
+        }
+
+        .lovely-phrases span {
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Imagen de tulipanes -->
+        <div class="image-container"></div>
+
+        <!-- Pregunta principal -->
+        <h1 class="question">¿Puedo ser tu Valentín, Bris?</h1>
+
+        <!-- Respuestas -->
+        <div class="answers">
+            <div class="answer">¡Siii!</div>
+            <div class="answer">Noo, por feo.</div>
+            <div class="answer">¡Claro!</div>
+            <div class="answer">Hmm, tal vez...</div>
+        </div>
+
+        <!-- Imagen de Rapunzel -->
+        <div class="rapunzel-image"></div>
+
+        <!-- Frases lindas -->
+        <div class="lovely-phrases">
+            <span>"El amor es como un tulipán, florece cuando menos lo esperas."</span>
+            <span>"Como Rapunzel, mi corazón te espera en la torre de mis sueños."</span>
+            <span>"Cada día contigo es un cuento de hadas."</span>
+            <span>"Tú eres la flor más hermosa de mi jardín." </span>
+        </div>
+    </div>
+</body>
+</html>
